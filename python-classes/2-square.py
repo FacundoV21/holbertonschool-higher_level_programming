@@ -9,7 +9,7 @@ class Square:
 
     """This class describes a square as well as all it's properties."""
 
-    def __init__(self, size):
+    def __init__(self, size=0):
         """
             Method that initializes each instance of the class square, and
             __size is a private atribute. An error is risen if the size is not
