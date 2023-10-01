@@ -17,7 +17,7 @@ test 1:
 test 2:
 
 >>> add_integer(3.5, 10)
-13.5
+13
 
 test 3:
 
@@ -44,7 +44,7 @@ TypeError: a must be an integer
 
 test 7:
 >>> add_integer(2*2, 4/4)
-4
+5
 
 test 8:
 >>> add_integer(100, float('inf'))
