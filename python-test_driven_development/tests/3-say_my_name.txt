@@ -1,0 +1,76 @@
+=================================
+    Say my name function tests
+=================================
+
+"""
+    This file contains all the relevant tests to do to the function in
+    3-say_my_name
+"""
+
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+test 1:
+
+>>> say_my_name("Heisenberg", )
+My name is Heisenberg 
+
+test 2:
+
+>>> say_my_name("Facu", "Villagra")
+My name is Facu Villagra
+
+test 3:
+
+>>> say_my_name("El", "Barto")
+My name is El Barto
+
+test 4:
+
+>>> say_my_name("Homero", "")
+My name is Homero 
+
+test 5:
+
+>>> say_my_name(None)
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+test 6:
+
+>>> say_my_name("KND", "Kids", "Next", "Door")
+Traceback (most recent call last):
+TypeError: say_my_name() takes from 1 to 2 positional arguments but 4 were given
+
+test 7:
+
+>>> say_my_name()
+Traceback (most recent call last):
+TypeError: say_my_name() missing 1 required positional argument: 'first_name'
+
+test 8:
+
+>>> say_my_name(123, "Raul")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+test 9
+
+>>> say_my_name("Erndesto", ["De La", "Cruz"])
+Traceback (most recent call last):
+TypeError: last_name must be a string
+
+test 10
+
+>>> say_my_name([[12, 34], [56, 78]])
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+test 11
+
+>>> say_my_name("123", "456")
+My name is 123 456
+
+test 12
+
+>>> say_my_name("[[13, 24], [83, 64]]")
+My name is [[13, 24], [83, 64]] 

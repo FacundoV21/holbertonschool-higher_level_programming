@@ -1,5 +1,5 @@
 =============================
-    Adding function tests
+    Dividing function tests
 =============================
 
 """
