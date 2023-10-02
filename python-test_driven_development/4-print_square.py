@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    Say my name function, wich print the first and second name passed
+    Print square function, all of its test are located on the tests folder
 
 """
 

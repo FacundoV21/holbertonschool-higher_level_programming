@@ -1,0 +1,72 @@
+=====================================
+    Text indentation funcion tests
+=====================================
+
+"""
+   This file contains all the relevant tests to do to the function in
+    5-text_indentation
+"""
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+test 1:
+
+>>> text_indentation("Hi. 123. 456")
+Hi.
+<BLANKLINE>
+123.
+<BLANKLINE>
+456
+
+Test 2:
+
+>>> text_indentation("Hello", "Jaguariu.")
+Traceback (most recent call last):
+TypeError: text_indentation() takes 1 positional argument but 2 were given
+
+test 3:
+
+>>> text_indentation("Hello      .     What's    up?")
+Hello      .
+<BLANKLINE>
+    What's    up?
+
+
+test 4:
+
+>>> text_indentation(101)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+test 5:
+
+>>> text_indentation(30.40)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+test 6:
+
+>>> text_indentation([1, 2, 3, 4])
+Traceback (most recent call last):
+TypeError: text must be a string
+
+test 7:
+
+>>> text_indentation("H. O. L. A.")
+H.
+<BLANKLINE>
+O.
+<BLANKLINE>
+L.
+<BLANKLINE>
+A.
+
+test 8:
+
+>>> text_indentation({"abc":1, "def":2})
+Traceback (most recent call last):
+TypeError: text must be a string
+
+test 9:
+
+>>> text_indentation("")
