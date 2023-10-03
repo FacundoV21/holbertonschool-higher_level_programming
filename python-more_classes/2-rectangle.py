@@ -56,13 +56,13 @@ class Rectangle:
         else:
             self.__height = height
 
-    def area(self=0):
+    def area(self):
         """
             Method that returns the area of the Rectangle.
         """
         return self.__height * self.__width
 
-    def perimeter(self=0):
+    def perimeter(self):
         """
             Method that returns the perimeter of the Rectangle.
         """
