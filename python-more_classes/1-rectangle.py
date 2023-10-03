@@ -24,7 +24,7 @@ class Rectangle:
             Method that returns the width of the Rectangle.
         """
         return self.__width
-    
+
     @width.setter
     def width(self, width):
         """
