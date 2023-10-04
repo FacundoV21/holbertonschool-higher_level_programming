@@ -18,8 +18,8 @@ class Rectangle:
             __size is a private atribute. An error is risen if the size is not
             an integer or if it is less than 0.
         """
-        self.height = height
         self.width = width
+        self.height = height
         type(self).number_of_instances += 1
 
     @property
