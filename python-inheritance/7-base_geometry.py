@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    add area imp to class
+    add area implementation to class
 """
 
 
@@ -15,7 +15,7 @@ class BaseGeometry():
         int validator added
     """
     def integer_validator(self, name, value):
-        if isinstance(value, int):
+        if type(value) is not int:
             raise TypeError(f"{name} must be an integer")
         if value <= 0:
             raise ValueError(f"{name} must be greater than 0")
