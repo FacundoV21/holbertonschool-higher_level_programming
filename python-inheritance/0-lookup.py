@@ -2,6 +2,8 @@
 """
     Module to declare list of available attributes and methods of an object
 """
+
+
 def lookup(obj):
     """
         Returns the list
