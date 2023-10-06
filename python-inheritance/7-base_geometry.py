@@ -1,18 +1,18 @@
 #!/usr/bin/python3
 """
-    add area implementation to class
+    add area  to class
 """
 
 
 class BaseGeometry():
     """
-        area added
+        area assss
     """
     def area(self):
         raise Exception('area() is not implemented')
 
     """
-        int validator added
+        int validator addassssed
     """
     def integer_validator(self, name, value):
         if type(value) is not int:
