@@ -3,6 +3,7 @@
     Module to declare list of available attributes and methods of an object
 """
 
+
 class MyList(list):
     """
         MyList class
