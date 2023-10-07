@@ -11,7 +11,7 @@ class Square(Rectangle):
 
     def __init__(self, size):
         """
-            Class wich inherits from Rectangle
+            Class wich inherits Rectangle
         """
         super().integer_validator("size", size)
         super().__init__(size, size)
