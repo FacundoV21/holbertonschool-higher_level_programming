@@ -12,14 +12,12 @@ save = __import__('5-save_to_json_file').save_to_json_file
 load = __import__('6-load_from_json_file').load_from_json_file
 
 
-fileName = "add_item.json"
-
-if exists(fileName):
-    cont = load_from_json_file(fileName)
+if exists("add_item.json"):
+    cont = load("add_item.json")
 else:
     cont = []
 
-with open(fileName, "w", encoding="utf-8") as f:
+with open("add_item.json", "w", encoding="utf-8") as f:
     for i in range(1, len(argv)):
         cont.append(argv[i])
-    save(cont, fileName)
+    save(cont, "add_item.json")
