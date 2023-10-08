@@ -17,7 +17,6 @@ if exists("add_item.json"):
 else:
     cont = []
 
-with open("add_item.json", "w", encoding="utf-8") as f:
-    for i in range(1, len(argv)):
-        cont.append(argv[i])
-    save(cont, "add_item.json")
+for i in range(1, len(argv)):
+    cont.append(argv[i])
+save(cont, "add_item.json")
