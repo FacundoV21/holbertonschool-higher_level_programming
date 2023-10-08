@@ -1,10 +1,7 @@
 #!/usr/bin/python3
-
 """
     Start of the program
 """
-
-
 from sys import argv
 from os.path import exists
 import json
