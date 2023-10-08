@@ -18,14 +18,9 @@ if __name__ == "__main__":
     """
 
     fileName = "add_item.json"
-
-    with open(fileName, "r") as f:
-        if f.read() == "":
-            save([], fileName)
-
     cont = load(fileName)
 
-    for i in range(1, len(argv)):
-        cont.append(argv[i])
-
-    save(cont, fileName)
+    with open(fileName, "w", encoding="utf-8") as f:
+        for i in range(1, len(argv)):
+            cont.append(argv[i])
+        save(cont, fileName)
