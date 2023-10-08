@@ -14,7 +14,8 @@ if exists("add_item.json"):
 else:
     contenido = []
 
-for i in range(1, len(argv)):
+argc = len(argv)
+for i in range(1, argc):
     contenido.append(argv[i])
 
 save_to_json_file(contenido, "add_item.json")
