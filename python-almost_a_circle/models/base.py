@@ -14,7 +14,7 @@ class Base:
 
     def __init__(self, id=None):
         """
-            Innitialization 
+            Innitialization
         """
         if id is None:
             type(self).__nb_objects += 1
@@ -22,4 +22,3 @@ class Base:
 
         else:
             self.id = id
-
