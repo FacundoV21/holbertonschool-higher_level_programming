@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    This module contains the declaration of the base class
+    This module declarates the base class
 """
 
 import json
