@@ -103,12 +103,12 @@ class Rectangle(Base):
         """
             function to print the rectangle
         """
-        for i in range (0, self.__y):
+        for i in range(0, self.__y):
             print()
         for j in range(0, self.__height):
             for k in range(0, self.__x):
                 print(" ", end="")
-            for l in range(0, self.__width):
+            for ln in range(0, self.__width):
                 print("#", end="")
             print()
 
