@@ -15,93 +15,32 @@ class Square(Rectangle):
         """
             Init of the Square class
         """
-        super().__init__(id)
-        self.size
-        self.x = x
-        self.y = y
+        super().__init__(size, size, x, y, id)
 
     @property
     def size(self):
         """
             Getter size
         """
-        return self.__size
+        return self.width
 
     @size.setter
     def size(self, size):
         """
             Setter size
         """
-        if type(size) is not int:
-            raise TypeError("size must be an integer")
-        if size <= 0:
-            raise ValueError("size must be > 0")
-        self.__size = size
-
-    @property
-    def x(self):
-        """
-            Getter x
-        """
-        return self.__x
-
-    @x.setter
-    def x(self, x):
-        """
-            Setter x
-        """
-        if type(x) is not int:
-            raise TypeError("x must be an integer")
-        if x < 0:
-            raise ValueError("x must be >= 0")
-        self.__x = x
-
-    @property
-    def y(self):
-        """
-            Getter y
-        """
-        return self.__y
-
-    @y.setter
-    def y(self, y):
-        """
-            Setter y
-        """
-        if type(y) is not int:
-            raise TypeError("y must be an integer")
-        if y < 0:
-            raise ValueError("y must be >= 0")
-        self.__y = y
-
-    def area(self):
-        """
-            function to retrieve the area of the rectangle
-        """
-        return (self.__width * self.__height)
-
-    def display(self):
-        """
-            function to print the rectangle
-        """
-        for i in range(0, self.__y):
-            print()
-        for j in range(0, self.__size):
-            for k in range(0, self.__x):
-                print(" ", end="")
-            for ln in range(0, self.__size):
-                print("#", end="")
-            print()
+        self.__width = size
+        self.__height = size
 
     def __str__(self):
         """
-            Returns data related to the rectangle
+            Returns data related to the square
         """
-        return f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.__size}"
+        return f"[Square] ({self.id}) {self.x}/{self.y} - {self.size}"
 
     def update(self, *args, **kwargs):
         """
-            updates the values of the rectangle
+            updates the values of the square
         """
         if args and len(args) > 0:
             atr = ["id", "size", "x", "y"]
