@@ -131,3 +131,17 @@ class Rectangle(Base):
         else:
             for j, arg in kwargs.items():
                 setattr(self, j, arg)
+
+    def to_dictionary(self):
+        """
+            Square dict
+        """
+        di = {
+            "id": self.id,
+            "width": self.width,
+            "height": self.height,
+            "x": self.x,
+            "y": self.y,
+        }
+
+        return di
