@@ -19,8 +19,8 @@ if __name__ == "__main__":
         """
             SELECT *
             FROM states
-            WHERE name ='{}'
-            ORDER BY state.id ASC;
+            WHERE name = '{}'
+            ORDER BY states.id ASC;
         """.format(argv[4])
     )
     data = con.fetchall()
