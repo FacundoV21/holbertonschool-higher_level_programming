@@ -16,10 +16,11 @@ if __name__ == "__main__":
 
     con = database.cursor()
     con.execute(
-        """SELECT *
+        """
+            SELECT *
             FROM states
             WHERE name ='{}'
-            ORDER BY id ASC;
+            ORDER BY state.id ASC;
         """.format(argv[4])
     )
     data = con.fetchall()
