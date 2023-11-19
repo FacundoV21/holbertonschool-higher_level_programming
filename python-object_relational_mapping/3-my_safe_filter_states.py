@@ -26,6 +26,3 @@ if __name__ == "__main__":
     data = con.fetchall()
     for i in data:
         print(i)
-
-con.close()
-database.close()
