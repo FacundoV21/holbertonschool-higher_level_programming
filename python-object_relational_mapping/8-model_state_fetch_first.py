@@ -14,5 +14,7 @@ if __name__ == "__main__":
     session = Session()
     statesList = session.query(State).where(State.id == 1)
 
-    for i, j in enumerate(statesList, 1):
-        print(f"{i}: {j.name}")
+    if (not statesList):
+        print("Nothing")
+    else:
+        print(f"{statesList.id}: {statesList.name}")
