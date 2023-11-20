@@ -12,7 +12,7 @@ if __name__ == "__main__":
     engine = create_engine(con.format(sys.argv[1], sys.argv[2], sys.argv[3]))
     Session = sessionmaker(bind=engine)
     session = Session()
-    obj = State(name = 'Louisiana')
+    obj = State(name='Louisiana')
     command = session.add(obj)
     session.commit()
     print(obj.id)
