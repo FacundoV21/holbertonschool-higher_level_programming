@@ -12,7 +12,8 @@ if __name__ == "__main__":
     engine = create_engine(con.format(sys.argv[1], sys.argv[2], sys.argv[3]))
     Session = sessionmaker(bind=engine)
     session = Session()
-    statesList = session.query(State).where(State.name.like('%a%'))
+    stat = session.query(State)
+    stat = stat.filter(State.name.like('%a%')).order_by(State.id)
 
-    for i, j in enumerate(statesList, 1):
-        print(f"{i}: {j.name}")
+    for i in stat:
+        print(f"{i.id}: {i.name}")
