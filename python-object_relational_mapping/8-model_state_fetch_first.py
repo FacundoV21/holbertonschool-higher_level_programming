@@ -12,7 +12,7 @@ if __name__ == "__main__":
     engine = create_engine(con.format(sys.argv[1], sys.argv[2], sys.argv[3]))
     Session = sessionmaker(bind=engine)
     session = Session()
-    statesList = session.query(State).where(State.id == 1)
+    statesList = session.query(State).order_by(State.id).first()
 
     if (not statesList):
         print("Nothing")
